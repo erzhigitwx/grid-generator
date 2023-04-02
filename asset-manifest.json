@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/grid-generator/static/css/main.90b165cb.css",
+    "main.js": "/grid-generator/static/js/main.26a614d9.js",
+    "index.html": "/grid-generator/index.html",
+    "main.90b165cb.css.map": "/grid-generator/static/css/main.90b165cb.css.map",
+    "main.26a614d9.js.map": "/grid-generator/static/js/main.26a614d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90b165cb.css",
+    "static/js/main.26a614d9.js"
+  ]
+}
