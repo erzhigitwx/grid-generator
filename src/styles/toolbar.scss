@@ -1,0 +1,84 @@
+.mainbar {
+  height: 500px;
+  box-shadow: 0 0 70px 7px black;
+  padding: 50px;
+  .mainbar-row__gap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .mainbar-column__gap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .units {
+    margin-top: 50px;
+    font-size: 24px;
+
+    li {
+      font-size: 20px;
+      color: cornflowerblue;
+    }
+  }
+  .buttons {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .button__see-code {
+      color: greenyellow;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .button-reset {
+      color: #ffffff;
+    }
+  }
+}
+
+// adaptive
+
+@media (max-width: 1550px) {
+  .mainbar-wrap {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mainbar {
+    width: 60%;
+  }
+}
+.modal-wrapper {
+  position: fixed;
+  top: 0; /* верхняя координата */
+  left: 0; /* левая координата */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* прозрачный фон */
+  display: flex; /* центрирование изображения по горизонтали и вертикали */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* устанавливаем высокий z-index, чтобы перекрыть остальной контент */
+  .modal {
+    height: 300px;
+    width: 800px;
+    background-color: #663399;
+    padding: 50px;
+    .modal-content{
+      width: 100%;
+      height: 100%;
+      border: 3px solid black;
+      background-color: rgb(42, 39, 52);
+      overflow-y: scroll;
+    }
+  }
+}
